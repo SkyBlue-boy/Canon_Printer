@@ -301,7 +301,7 @@ def determine_function_with_yolo(model, img):
     
     if CLASS_ID_ICON in found_classes: return "id"
     elif CLASS_BACK_ICON in found_classes: return "back"
-    return "unknown"
+    return "unknown" # unknown
 
 # ==========================================
 # [메인]

@@ -1,0 +1,8 @@
+# 모든 이미지 파일 무시하기
+*.jpg
+*.jpeg
+*.png
+
+# (선택사항) 데이터셋 폴더 통째로 무시하기
+# 만약 anomaly/datasets 폴더 안의 모든 것을 무시하려면 아래 줄도 추가하세요
+anomaly/datasets/
