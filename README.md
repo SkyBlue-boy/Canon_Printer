@@ -96,6 +96,8 @@ Canon_Printer(Project_Root folder)/
 
 ## Training PatchGuard
 
+- printer class(손 침범 등) 학습을 할 때는 --class_name에 printer, lcd class(빛 반사, 화면 비닐 구겨짐 등) 학습을 할 때는 --class_name에 lcd
+
 - Train: python main.py --mode train --class_name printer --dataset mvtec --dataset_dir /home/shlee/Final_code/Canon_Printer/anomaly/datasets/all --epochs 100
 - Test: python main.py --mode test --class_name printer --dataset mvtec --dataset_dir /home/shlee/Final_code/Canon_Printer/anomaly/datasets/all --checkpoint_dir /home/shlee/Final_code/Canon_Printer/anomaly/PatchGuard/
 - Visualization: python main.py --mode visualization --class_name printer --dataset mvtec --dataset_dir /home/shlee/Final_code/Canon_Printer/anomaly/datasets/all --checkpoint_dir /home/shlee/Final_code/Canon_Printer/anomaly/PatchGuard/
@@ -105,7 +107,7 @@ Canon_Printer(Project_Root folder)/
 ## 💻 Tech Stack
 - Framework: Streamlit
 - Anomaly Detection: PatchGuard (Vision Transformer based)
-- Object Detection: YOLOv8 (Ultralytics)
+- Object Detection: YOLOv12 (Ultralytics)
 - OCR: PaddleOCR
 - Image Processing: OpenCV, SciPy (Gaussian Filter)
 
