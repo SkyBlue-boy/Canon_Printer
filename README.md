@@ -23,11 +23,11 @@ Streamlit 기반의 웹 애플리케이션으로, PatchGuard(이상치 탐지)�
 #### 3. 기종 분류 (Model Classification) - PASS Only
 결함 검사를 통과(PASS)한 정상 제품에 대해서만 기종 분류가 수행됩니다.
 
-- 알고리즘: PaddleOCR + YOLOv8
+- 알고리즘: PaddleOCR + YOLOv12
 - 분류 로직:
   - 언어 식별: OCR을 통해 한국어, 일본어, 중국어(번체/간체) 키워드 매칭.
   - 기능 식별: YOLO 객체 탐지 및 OCR 텍스트를 통해 ID Card / Back 기능 버튼 구분.
-- 분류 클래스: Korea, Japan, Taiwan, China_id, China_back, English_id, English_back 등.
+- 분류 클래스: Korea, Japan, Taiwan, China_id, China_back, English_id, English_back, No_label
 
 
 #### 4. 결과 처리 및 데이터 관리 (Output & Logging)
