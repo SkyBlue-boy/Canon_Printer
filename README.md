@@ -17,7 +17,7 @@ Streamlit 기반의 웹 애플리케이션으로, PatchGuard(이상치 탐지)�
 | 단계 | 검사 항목 | 사용 모델 / 알고리즘 | 판정 기준 (Threshold) | 시각화 (Visualization) |
 | :---: | :--- | :--- | :--- | :--- |
 | 1️⃣ **Step 1** | 🖐️ **화면 침범** (Intrusion) | `PatchGuard` (Printer) | Anomaly Score ≥ `0.8` | 🔴 **Red Heatmap** (JET) |
-| 2️⃣ **Step 2** | ✨ **빛 반사** (Reflection) | `PatchGuard` (LCD) | Anomaly Score ≥ `-3.0` | 🟠 **Red/Orange Heatmap** (HOT)<br><sub>*LCD 영역 오버레이*</sub> |
+| 2️⃣ **Step 2** | ✨ **빛 반사** (Reflection) | `PatchGuard` (LCD) | Anomaly Score ≥ `-1.0` | 🟠 **Red/Orange Heatmap** (HOT)<br><sub>*LCD 영역 오버레이*</sub> |
 | 3️⃣ **Step 3** | 📏 **아이콘 밀림** (Position) | `YOLOv8` | Max Distance > `5.0 px` | 🔗 **아이콘-버튼 중심점 연결선** |
 
 #### 3. 기종 분류 (Model Classification) - PASS Only
